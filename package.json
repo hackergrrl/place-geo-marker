@@ -10,7 +10,7 @@
   "author": "Stephen Whitmore <sww@eight45.net>",
   "license": "MIT",
   "devDependencies": {
-    "get-query-param": "^1.0.0",
+    "get-query-param": "^1.0.0"
   },
   "dependencies": {
     "opn": "^3.0.2",
