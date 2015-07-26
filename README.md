@@ -3,12 +3,13 @@
 > Launch an interactive map to place a marker, and get a longitude/latitude back
 > when the tab is closed.
 
-
 # Install
 
 ```
 npm install place-geo-marker
 ```
+
+`place-geo-marker` is designed for use with Node, not in the browser. ([For now.](https://github.com/noffle/place-geo-marker/issues/1))
 
 
 # Usage
