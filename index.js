@@ -1,6 +1,7 @@
 var fs = require('fs')
 var http = require('http')
 var opn = require('opn')
+var path = require('path')
 var shoe = require('shoe')
 
 module.exports = function (defaultLngLat, cb) {
@@ -11,9 +12,9 @@ module.exports = function (defaultLngLat, cb) {
   // Serve the static files.
   var server = http.createServer(function(req, res) {
     if (/bundle.js/.test(req.url)) {
-      fs.createReadStream('bundle.js').pipe(res)
+      fs.createReadStream(path.join(__dirname, 'bundle.js')).pipe(res)
     } else {
-      fs.createReadStream('map.html').pipe(res)
+      fs.createReadStream(path.join(__dirname, 'map.html')).pipe(res)
     }
   })
 
