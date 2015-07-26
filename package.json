@@ -7,7 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify map.js > bundle.js"
   },
-  "author": "Stephen Whitmore <sww@eight45.net>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noffle/place-geo-marker.git"
+  },
+  "homepage": "https://github.com/noffle/place-geo-marker",
+  "keywords": [
+    "git",
+    "blog",
+    "http"
+  ],
+  "author": {
+    "name": "Stephen Whitmore",
+    "email": "sww@eight45.net",
+    "url": "http://eight45.net"
+  },
   "license": "MIT",
   "devDependencies": {
     "get-query-param": "^1.0.0"
