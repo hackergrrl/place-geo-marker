@@ -1,0 +1,19 @@
+{
+  "name": "geo-place-marker",
+  "version": "0.0.1",
+  "description": "Launch an interactive map to place a marker, and get a lng/lat back when the tab is closed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify map.js > bundle.js"
+  },
+  "author": "Stephen Whitmore <sww@eight45.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "get-query-param": "^1.0.0",
+  },
+  "dependencies": {
+    "opn": "^3.0.2",
+    "shoe": "0.0.15"
+  }
+}
