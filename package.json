@@ -13,9 +13,16 @@
   },
   "homepage": "https://github.com/noffle/place-geo-marker",
   "keywords": [
-    "git",
-    "blog",
-    "http"
+    "geo",
+    "geotag",
+    "geotagging",
+    "location",
+    "coordinates",
+    "lat",
+    "lon",
+    "latitude",
+    "longitude",
+    "coordinates"
   ],
   "author": {
     "name": "Stephen Whitmore",
