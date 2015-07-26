@@ -23,9 +23,11 @@ module.exports = function (defaultLngLat, cb) {
 
   var sock = shoe(function(stream) {
     stream.on('end', function() {
+      server.close()
       cb(null, pos)
     })
     stream.on('close', function() {
+      server.close()
       cb(null, pos)
     })
     stream.on('data', function(data) {

@@ -46,6 +46,21 @@ a default will be provided.
 and the parameter two being an object as above with `lng` and `lat` properties.
 
 
+# How it Works
+
+A woeful hack! `place-geo-marker` starts a local HTTP server on `localhost:9691`
+and then launches your `$BROWSER` to that URL, serving some HTML and Javascript
+that shows a Google Map with a draggable marker the default location.
+
+Every time the user ends a drag operation, it sends that location along a
+Websocket that is connected to the localhost server.
+
+When the user is finished, they close the tab. This severs the Websocket
+connection, informing the local HTTP server the location is finalized, which
+kills the server and sends the final location in a callback to the original
+caller.
+
+
 # License
 
 MIT
