@@ -48,9 +48,10 @@ and the parameter two being an object as above with `lng` and `lat` properties.
 
 # How it Works
 
-A woeful hack! `place-geo-marker` starts a local HTTP server on `localhost:9691`
-and then launches your `$BROWSER` to that URL, serving some HTML and Javascript
-that shows a Google Map with a draggable marker the default location.
+A wonderful hack! `place-geo-marker` starts a local HTTP server on
+`localhost:9691` and then launches your `$BROWSER` to that URL, serving some
+HTML and Javascript that shows a Google Map with a draggable marker the default
+location.
 
 Every time the user ends a drag operation, it sends that location along a
 Websocket that is connected to the localhost server.
