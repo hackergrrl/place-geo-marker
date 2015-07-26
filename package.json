@@ -1,6 +1,6 @@
 {
   "name": "geo-place-marker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Launch an interactive map to place a marker, and get a lng/lat back when the tab is closed.",
   "main": "index.js",
   "scripts": {
