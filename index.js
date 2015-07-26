@@ -18,8 +18,12 @@ module.exports = function (defaultLngLat, cb) {
     }
   })
 
+  server.setTimeout(1000)
+
   server.listen(port, function() {
-    opn('http://localhost:' + port + '?lon=' + defaultLngLat.lng + '&lat=' + defaultLngLat.lat)
+    opn('http://localhost:' + port
+        + '?lon=' + defaultLngLat.lng
+        + '&lat=' + defaultLngLat.lat)
   })
 
   var sock = shoe(function(stream) {
